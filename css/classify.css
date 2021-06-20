@@ -1,0 +1,128 @@
+h2 {
+  margin-top: 0;
+}
+
+.head-bottom {
+  width: 100%;
+  height: 2rem;
+  background: url(../images/b15.jpg) no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  color: aliceblue;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head-bottom .bt {
+  width: auto;
+  height: 0.8rem;
+  overflow: hidden;
+}
+
+@keyframes headan {
+  100% {
+    margin-top: 0;
+  }
+}
+
+.head-bottom h2 {
+  font-size: 0.35rem;
+  margin: 1rem auto 0;
+  text-shadow: 0px 3px 3px pink,0px -3px 3px pink;
+  animation: headan 0.5s forwards;
+}
+
+.head-bottom p {
+  font-size: 0.2rem;
+  margin-top: 1rem;
+  animation: headan 0.5s 0.3s forwards;
+}
+
+.main {
+  padding-top: 0.3rem;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+}
+
+.main .fixed {
+  position: fixed;
+  top: 0px;
+  width: 16%;
+}
+
+.main .fixedfoot {
+  position: fixed;
+  bottom: 5rem;
+  width: 16%;
+}
+
+.main .left ul {
+  width: 100%;
+}
+
+.main .left ul li {
+  list-style-type: none;
+  text-align: center;
+  line-height: 0.4rem;
+  font-size: 0.16rem;
+  font-weight: bold;
+  background: darkseagreen;
+  color: powderblue;
+  position: relative;
+}
+
+.main .left ul li:hover {
+  background: #60fc60;
+  color: white;
+}
+
+.main .left ul li ul {
+  display: none;
+}
+
+.main .left ul li ul li {
+  background: #e9ffe9;
+}
+
+.main .left ul li span {
+  display: inline-block;
+  width: 0.1rem;
+  height: 0.1rem;
+  border: 0.1rem solid transparent;
+  border-left: 0.1rem solid white;
+  position: absolute;
+  left: 0;
+  margin-top: 0.1rem;
+  display: none;
+}
+
+.main .right .lis li {
+  list-style-type: none;
+}
+
+.main .right .lis li h3 {
+  margin-top: 0.2rem;
+}
+
+.main .right .lis li ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main .right .lis li ul li {
+  box-sizing: content-box;
+  width: auto;
+  padding: 0 0.1rem;
+  margin-right: 0.2rem;
+  margin-top: 0.2rem;
+  text-align: center;
+  line-height: 0.3rem;
+  border-radius: 0.1rem;
+  background: rgba(255, 235, 54, 0.76);
+}
+
+.main .right .lis li ul li:hover {
+  background: coral;
+}

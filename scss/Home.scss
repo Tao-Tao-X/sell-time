@@ -1,0 +1,261 @@
+#main{
+  padding-top: 0.3rem;
+    .biaoti{
+      width: 2rem;
+      text-align: center;
+      height: 0.5rem;
+      background: url(../images/bt.png) no-repeat;
+      background-size: 100% 100%;
+      margin: auto;
+      font-size: 2.5rem;
+      h2{
+        line-height: 0.5rem;
+        font-size: 0.25rem;
+      }
+      h3{
+        margin-top: -0.1rem;
+        color: rgb(172, 172, 172);
+        font-size: 0.25rem;
+      }
+    }
+    .fw{
+      margin-top: 0.4rem;
+      .fwjs{
+        text-align: center;
+        height: 3rem;
+        transform: rotateY(270deg);
+        &:hover{
+          // box-shadow: 5px 5px 3px #999 inset, -5px -5px 3px #999 inset;
+          transform: scale(1.1) !important;
+          p{
+            color: rgb(0, 255, 255);
+          }
+        }
+        
+        &:nth-child(1){
+          transition: transform 1s;
+        }
+        &:nth-child(2){
+          transition: transform 1.5s;
+        }
+        &:nth-child(3){
+          transition: transform 2s;
+        }
+        &:nth-child(4){
+          transition: transform 2.5s;
+        }
+        h2{
+          font-size: 0.2rem;
+          color: rgb(126, 31, 31);
+        }
+        p{
+          font-size:0.12rem
+        }
+        .tur{
+          margin: auto;
+          border-radius: 50%;
+          width: 1.5rem;
+          height: 1.5rem;
+          background:radial-gradient(rgb(201, 255, 52),rgba(229, 255, 82, 0));
+          img{
+            width: 1rem;
+            height: 1rem;
+            margin-top: 0.25rem;
+          }
+        }
+      }
+    }
+    .main2{
+      width: 100%;
+      font-size: 0.18rem;
+      margin-bottom: 0.5rem;
+      background: url(../images/b13.jpg) no-repeat center center;
+      background-size: 120% 140%;
+      background-attachment: fixed;
+      box-sizing: content-box;
+      padding: 0.3rem 0 0.6rem;
+      @keyframes tabtop {
+        100%{
+          margin-top: 0;
+        }
+      }
+      .biaoti{
+        margin-bottom: 0.5rem;
+        color: white;
+      }
+      .tabbar{
+        width: 90%;
+        margin: 0 auto;
+        color: white;
+        .tab{
+          color: #666;
+          width: 100%;
+          display: flex;
+          transform: skew(-30deg,0);
+          position: relative;
+          background: cornsilk;
+          margin-top: 3rem;
+          margin-bottom: 0.3rem;
+          span{
+            left: 0;
+            top: 0;
+            display: block;
+            width: 33.33%;
+            height: 0.3rem;
+            background: rgb(207, 0, 41);
+            font-weight: bold;
+            position: absolute;
+            z-index: -1;
+          }
+          .tab-item{
+            text-align: center;
+            line-height: .3rem;
+            flex: 1;
+            border: 1px solid #333;
+            cursor: pointer;
+          }
+        }
+        @keyframes tab {
+          100%{
+            margin-left: 0;
+            opacity: 1;
+          }
+        }
+        .tab-content{
+          margin-top:1rem;
+          width: 100%;
+          overflow: hidden;
+          height: auto;
+          .tab-details{
+            display: none;
+            position: relative;
+            .img{
+              width: 3.5rem;
+              height: 2.2rem;
+              overflow: hidden;
+              img{
+                height: 100%;
+              }
+              &:hover{
+                img{
+                  transform:scale(1.3);
+                }
+              }
+            }
+          }
+          .tab-action{
+            display: block;
+          }
+          img{
+            width: 3.5rem;
+            margin-left:-4rem;
+            animation: tab 0.5s forwards;
+            transition: transform 0.5s;
+            opacity: 0;
+          }
+          @keyframes tabright {
+            100%{
+              left: 4rem;
+              opacity: 1;
+            }
+          }
+          .tab-right{
+            width: 4.5rem;
+            position: absolute;
+            top: 0;
+            left: 10rem;
+            animation: tabright .5s forwards;
+            opacity: 0;
+            h3{
+              font-size: 0.16rem;
+              color:rgb(255, 27, 27);
+            }
+            p{
+              font-size: 0.14rem;
+              text-indent: 2em;
+            }
+          }
+        }
+      }
+    }
+    .main3{
+      width: 100%;
+      overflow: hidden;
+      @keyframes casean {
+        100%{
+          margin-left: 0;
+        }
+      }
+      .cases{
+        width: 90%;
+        margin: 0 auto;
+      }
+      .biaoti{
+        margin-bottom: 0.5rem;
+      }
+      .case{
+        width: 100%;
+        height: 1.6rem;
+        margin: 0 auto 0.3rem;
+        display: flex;
+        overflow: hidden;
+        &:nth-child(1){
+          margin-left: -10rem;
+        }
+        &:nth-child(2){
+          margin-left: 10rem;
+        }
+        .show{
+          flex: 1;
+          position: relative;
+          text-align: center;
+          &:hover{
+            img{
+              filter: blur(2px);
+            }
+            .more{
+              // display: block;
+              span{
+                left: 0;
+              }
+            }
+          }
+          img{
+            width: 85%;
+            transition: filter .5s;
+          }
+          .more{
+            margin:auto;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 85%;
+            height: 100%;
+            background: rgba(102, 102, 102, 0.3);
+            overflow: hidden;
+            display: block;
+            // transition: all 1s;
+            span{
+              border-radius: 0 12px 12px 0;
+              background: #ffe58f;
+              width: 50%;
+              color: white;
+              display: inline-block;
+              line-height: 0.3rem;
+              font-size: 0.15rem;
+              // border: 1px solid #000;
+              position: absolute;
+              top: 20%;
+              left: -50%;
+              transition: left .6s;
+              &:hover{
+                background: rgb(255, 155, 32);
+              }
+            }
+          }
+        }
+      }
+    }
+}

@@ -1,0 +1,117 @@
+h2{
+  margin-top: 0;
+}
+.head-bottom{
+  width: 100%;
+  height: 2rem;
+  background: url(../images/b15.jpg) no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  color: aliceblue;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .bt{
+    width: auto;
+    height: 0.8rem;
+    overflow: hidden;
+  }
+  @keyframes headan {
+    100%{
+      margin-top: 0;
+    }
+  }
+  h2{
+    font-size: 0.35rem;
+    margin:1rem auto 0;
+    text-shadow: 0px 3px 3px pink,0px -3px 3px pink;
+    animation: headan 0.5s forwards;
+  }
+  p{
+    font-size: 0.2rem;
+    margin-top: 1rem;
+    animation: headan 0.5s 0.3s forwards;
+  }
+}
+.main{
+  padding-top: 0.3rem;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  .fixed{
+    position: fixed;
+    top: 0px;
+    width: 16%;
+  }
+  .fixedfoot{
+    position: fixed;
+    bottom: 5rem;
+    width: 16%;
+  }
+  .left{
+    
+    ul{
+      width: 100%;
+      li{
+        list-style-type: none;
+        text-align: center;
+        line-height: 0.4rem;
+        font-size: 0.16rem;
+        font-weight: bold;
+        background: darkseagreen;
+        color: powderblue;
+        position: relative;
+        &:hover{
+          background: rgb(96, 252, 96);
+          color: white;
+        }
+        ul{
+          display: none;
+          li{
+            background: rgb(233, 255, 233);
+          }
+        }  
+        span{
+          display: inline-block;
+          width: 0.1rem;
+          height: 0.1rem;
+          border: 0.1rem solid transparent;
+          border-left: 0.1rem solid white;
+          position: absolute;
+          left: 0;
+          margin-top: 0.1rem;
+          display: none;
+        }
+      }
+    }
+  }
+  .right{
+    .lis{
+      li{
+        list-style-type: none;
+        h3{
+          margin-top: 0.2rem;
+        }
+        ul{
+          display: flex;
+          // justify-content: space-between;
+          flex-wrap: wrap;
+          li{
+            box-sizing: content-box;
+            width: auto;
+            padding: 0 0.1rem;
+            margin-right: 0.2rem;
+            margin-top: 0.2rem;
+            text-align: center;
+            line-height: 0.3rem;
+            border-radius: 0.1rem;
+            background: rgba(255, 235, 54, 0.76);
+            &:hover{
+              background: coral;
+            }
+          }
+        }
+      }
+    }
+  }
+}

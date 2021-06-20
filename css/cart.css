@@ -1,0 +1,153 @@
+h2 {
+  margin-top: 0;
+}
+
+.head-bottom {
+  width: 100%;
+  height: 2rem;
+  background: url(../images/b15.jpg) no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  background-attachment: fixed;
+  color: aliceblue;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head-bottom .bt {
+  width: auto;
+  height: 0.8rem;
+  overflow: hidden;
+}
+
+@keyframes headan {
+  100% {
+    margin-top: 0;
+  }
+}
+
+.head-bottom h2 {
+  margin: 1rem auto 0;
+  font-size: 0.35rem;
+  text-shadow: 0px 3px 3px pink,0px -3px 3px pink;
+  animation: headan 0.5s forwards;
+}
+
+.head-bottom p {
+  font-size: 0.2rem;
+  margin-top: 1rem;
+  animation: headan 0.5s 0.3s forwards;
+}
+
+.main {
+  padding: 0 0.5rem;
+}
+
+.main h3 {
+  color: brown;
+  border-bottom: 3px solid brown;
+  width: 1.8rem;
+}
+
+.main h3 span {
+  font-size: 0.13rem;
+}
+
+.main .cart-item {
+  display: flex;
+  border-bottom: 3px solid #333;
+  padding: 0.2rem 0.1rem;
+  align-items: center;
+  text-align: center;
+  font-size: 0.13rem;
+}
+
+.main .cart-check {
+  flex: 0.5;
+}
+
+.main .goods {
+  flex: 5;
+}
+
+.main .goods .pic {
+  width: 1.5rem;
+  height: 1.5rem;
+  overflow: hidden;
+  border: 1px #333 solid;
+  float: left;
+}
+
+.main .goods .pic img {
+  width: 100%;
+}
+
+.main .goods p {
+  width: 80%;
+}
+
+.main .price {
+  flex: 1;
+}
+
+.main .count {
+  flex: 1;
+}
+
+.main .count button {
+  width: 20%;
+}
+
+.main .count input {
+  width: 40%;
+  text-align: center;
+}
+
+.main .subtotal {
+  flex: 1;
+}
+
+.main .operation {
+  flex: 1;
+}
+
+.main .cart-foot {
+  width: 100%;
+  height: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main .cart-foot span a {
+  color: #000;
+}
+
+.main .cart-foot span a:hover {
+  color: orange;
+}
+
+.main .cart-foot .sum {
+  line-height: 1rem;
+  width: 1rem;
+  height: 100%;
+  background: brown;
+  text-align: center;
+  color: white;
+}
+
+.main .hide2 {
+  font-size: 0.15rem;
+  text-align: center;
+  width: 100%;
+  height: 5rem;
+  display: none;
+  padding: 0.5rem 0;
+  overflow: hidden;
+}
+
+.main .hide2 img {
+  width: 30%;
+}

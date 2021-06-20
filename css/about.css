@@ -1,0 +1,311 @@
+h2 {
+  margin-top: 0;
+}
+
+.head-bottom {
+  width: 100%;
+  height: 2rem;
+  background: url(../images/b15.jpg) no-repeat;
+  background-size: 100%;
+  background-position: center center;
+  background-attachment: fixed;
+  color: aliceblue;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head-bottom .bt {
+  width: auto;
+  height: 0.8rem;
+  overflow: hidden;
+}
+
+@keyframes headan {
+  100% {
+    margin-top: 0;
+  }
+}
+
+.head-bottom h2 {
+  margin: 1rem auto 0;
+  font-size: 0.35rem;
+  text-shadow: 0px 3px 3px pink,0px -3px 3px pink;
+  animation: headan 0.5s forwards;
+}
+
+.head-bottom p {
+  font-size: 0.2rem;
+  margin-top: 1rem;
+  animation: headan 0.5s 0.3s forwards;
+}
+
+.main {
+  width: 100%;
+}
+
+.main .main-top {
+  width: 60%;
+  height: 1rem;
+  margin: -0.5rem auto 0;
+  border-radius: 0.2rem;
+  box-shadow: 0 5px 3px #666;
+  background: white;
+  font-size: 0.15rem;
+  text-align: center;
+}
+
+.main .main-top div {
+  display: table-cell;
+  vertical-align: middle;
+  width: 60%;
+  height: 1rem;
+}
+
+.main .bt {
+  font-size: 0.25rem;
+  color: #000;
+}
+
+.main .bt h2 {
+  line-height: 0.3rem;
+}
+
+.main .bt span {
+  font-size: 0.15rem;
+  color: #666;
+}
+
+.main .bt::before {
+  content: "";
+  width: 0.1rem;
+  height: 0.3rem;
+  background: #ffbb29;
+  display: block;
+  float: left;
+}
+
+.main .jianjie {
+  padding-top: 0.5rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main .content {
+  padding-top: 0.3rem;
+  position: relative;
+}
+
+.main .content img {
+  width: 100%;
+  border-radius: 50%;
+  transition: transform 0.3s;
+}
+
+.main .content img:hover {
+  transform: rotate(360deg);
+}
+
+.main .content p {
+  text-indent: 2em;
+  font-size: 0.13rem;
+  line-height: 0.22rem;
+}
+
+.main .content span {
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+  width: 1rem;
+  text-align: center;
+  font-size: 0.15rem;
+  line-height: 0.3rem;
+  background: darkorange;
+  border-radius: 10px;
+  color: white;
+}
+
+.main .content span:hover {
+  background: #ffbe44;
+}
+
+.main .xianzhuang {
+  padding-top: 0.5rem;
+  color: white;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main .xianzhuang .shuju {
+  width: 100%;
+  display: flex;
+  height: 3.5rem;
+  background: #8baaaa;
+  padding: 0 0.5rem;
+}
+
+.main .xianzhuang .shuju .sj {
+  flex: 1;
+  padding: 0.3rem;
+  background: url(../images/22.png) no-repeat left top;
+  background-size: 0.2rem 100%;
+}
+
+.main .xianzhuang .shuju .sj p {
+  line-height: 0.22rem;
+}
+
+.main .xianzhuang .shuju .sj:nth-child(1) {
+  height: 60%;
+}
+
+.main .xianzhuang .shuju .sj:nth-child(2) {
+  height: 75%;
+}
+
+.main .xianzhuang .shuju .sj:nth-child(3) {
+  height: 90%;
+}
+
+.main .xianzhuang .shuju .sj:nth-child(4) {
+  height: 80%;
+}
+
+.main .xianzhuang .shuju span {
+  font-size: 0.8rem;
+  border-bottom: 2px orange solid;
+}
+
+.main .news {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 0.5rem;
+}
+
+.main .news .news-item {
+  padding: 0.2rem 0;
+  display: flex;
+  width: 100%;
+  opacity: 0;
+  border-bottom: 2px solid #999;
+  transition: all 0.5s;
+}
+
+.main .news .news-item:hover {
+  padding-left: 0.25rem;
+  background: pink;
+}
+
+.main .news .news-item .left {
+  width: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.main .news .news-item .left span {
+  width: 80%;
+  height: 0.3rem;
+  background: #76ff76;
+  font-size: 0.15rem;
+  color: white;
+  text-align: center;
+  line-height: 0.3rem;
+  font-weight: bold;
+}
+
+.main .news .news-item .left div {
+  width: 80%;
+  height: 0.8rem;
+  font-size: 0.3rem;
+  text-align: center;
+  line-height: 0.8rem;
+  font-weight: bold;
+  background: white;
+}
+
+.main .news .news-item .left p {
+  width: 80%;
+  font-size: 0.13rem;
+  text-align: center;
+  line-height: 0.2rem;
+  font-weight: bold;
+  border-top: 2px solid #666;
+  background: #ffffe2;
+}
+
+.main .news .news-item .center {
+  width: 2rem;
+  height: 100%;
+  overflow: hidden;
+  padding: 0.1rem;
+}
+
+.main .news .news-item .center img {
+  width: 100%;
+}
+
+.main .news .news-item .right {
+  flex: 1;
+  position: relative;
+}
+
+.main .news .news-item .right h3 {
+  font-size: 0.19rem;
+  color: #c3ff1e;
+}
+
+.main .news .news-item .right p {
+  font-size: 0.13rem;
+  line-height: 0.22rem;
+  width: 90%;
+}
+
+.main .news .news-item .right .bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 0.11rem;
+  display: flex;
+}
+
+.main .news .news-item .right .bottom img {
+  width: 0.12rem;
+}
+
+.main .news .news-item .right .bottom span {
+  line-height: 0.12rem;
+}
+
+.main .news .news-item .right .bottom .stars {
+  margin-left: 0.2rem;
+}
+
+.main .news .page {
+  width: 100%;
+  display: flex;
+  padding: 0.2rem 0;
+  justify-content: center;
+}
+
+.main .news .page .action {
+  color: white;
+  background: #9c3636;
+}
+
+.main .news .page span, .main .news .page div {
+  display: inline-block;
+  width: 0.3rem;
+  height: 0.3rem;
+  border: 1px #333 solid;
+  text-align: center;
+  line-height: 0.3rem;
+  transition: all 0.3s;
+}
+
+.main .news .page span:hover, .main .news .page div:hover {
+  background: #9c3636;
+  color: white;
+}

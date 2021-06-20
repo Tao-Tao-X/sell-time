@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分类</title>
+    <!--[if lt IE 9]>
+      <scrip src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></scrip>
+      <scrip src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></scrip>
+    <![endif]-->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- <link rel="stylesheet" href="./css/swiper.min.css"> -->
+    <link rel="stylesheet" href="./css/classify.css">
+    <script src="./js/jquery.min.js"></script>
+    <!-- <script src="./js/swiper.min.js"></script> -->
+    <script src="./js/index.min.js"></script>
+    <script src="./js/demo.js"></script>
+    <script src="./js/classify.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="HeadTop">
+            <div class="HeadTop-1 container">
+                <div class="logo col-lg-3 col-md-3">
+                    <img src="./images/logo.png" alt="">
+                    <p>时间之商<br /><span>Selling Time</span></p>
+                </div>
+                <div class="search  col-lg-5 col-md-5">
+                    <input class="txt" type="text">
+                    <!-- <button class="btn">search</button> -->
+                    <input class="btn" type="button" value="search">
+                    <div class="history">
+                        <dl class="hh">历史记录</dl>
+                    </div>
+                </div>
+                <div class="time col-lg-3 col-md-3">
+                    <p>当前时间是：<span class="tt">2021/05/05</span></p>
+                </div>
+                <div class="visib col-lg-1 col-md-1">
+                    <div>
+                        <span class="glyphicon glyphicon-list tb"></span>
+                        <div class="hot">
+                            <div>热点搜索</div>
+                            <li><span>1</span><a href="#">时间之商的竟然有这样的功能</a></li>
+                            <li><span>2</span><a href="#">时间之商的使用说明</a></li>
+                            <li><span>3</span><a href="#">在时间之商上找到了老板</a></li>
+                            <li><span>4</span><a href="#">时间之商可以解决生活百分之80%的问题fsafafdsfafa</a></li>
+                            <li><span>5</span><a href="#">时间之商能找工作</a></li>
+                            <li><span>6</span><a href="#">时间之商的创立</a></li>
+                            <li><span>7</span><a href="#">了解时间之商之后</a></li>
+                            <li><span>8</span><a href="#">超新星的诞生——时间之商</a></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- nav导航栏 -->
+        <div id="bignav">
+            <div class="nav container">
+                <a href="index.html" class="col-lg-2 col-md-2">
+                    <dl>首页</dl>
+                    <span>Home</span>
+                </a>
+                <a href="classify.html" class="col-lg-2 col-md-2">
+                    <dl>分类</dl>
+                    <span>Classfy</span>
+                </a>
+                <a href="offer.html" class="col-lg-2 col-md-2">
+                    <dl>悬赏</dl>
+                    <span>Offer</span>
+                </a>
+                <a href="cart.html" class="col-lg-2 col-md-2">
+                    <dl>购物车</dl>
+                    <span>Cart</span>
+                </a>
+                <a href="about.html" class="col-lg-2 col-md-2">
+                    <dl>关于</dl>
+                    <span>About</span>
+                </a>
+                <a href="center.html" class="col-lg-2 col-md-2">
+                    <dl>个人中心</dl>
+                    <span>Center</span>
+                </a>
+            </div>
+        </div>
+        <div class="head-bottom">
+            <div class="bt">
+                <h2>分类</h2>
+                <p>Classify</p>
+            </div>
+        </div>
+    </header>
+    <!-- 网页中部 -->
+    <div class="main">
+        <div class="container">
+            <div class="left col-lg-3 col-md-3">
+                <div class="float">
+                    <ul>
+                        <li>
+                            <span style="display: block;"></span>生活服务
+                            <ul style="display: block;">
+                                <li>旅游</li>
+                                <li>餐饮</li>
+                                <li>保洁清洗</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span></span>代跑服务
+                            <ul>
+                                <li>搬家</li>
+                                <li>陪玩</li>
+                                <li>生活配送</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span></span>专业服务
+                            <ul>
+                                <li>礼仪庆典</li>
+                                <li>美发美体</li>
+                                <li>公共服务/专业机</li>
+                                <li>专业技能</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span></span>其他服务
+                            <ul>
+                                <li>二手回收</li>
+                                <li>摄影摄像</li>
+                                <li>心理咨询</li>
+                                <li>法律咨询</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+               
+            </div>
+            <div class="right col-md-offset-1 col-lg-8 col-md-8">
+                <div class="life">
+                    <div class="lis">
+                        <h2>生活服务</h2>
+                        <ul>
+                            <li>
+                                <h3 class="scrindex">旅游</h3>
+                                <ul>
+                                    <li>海外旅游</li>
+                                    <li>国内旅游</li>
+                                    <li>旅行社</li>
+                                    <li>自助旅游</li>
+                                    <li>酒店预定</li>
+                                    <li>港澳台旅游</li>
+                                    <li>周边旅游</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="scrindex">餐饮</h3>
+                                <ul>
+                                    <li>中餐</li>
+                                    <li>小吃</li>
+                                    <li>日韩餐饮</li>
+                                    <li>火锅</li>
+                                    <li>甜点/冷饮</li>
+                                    <li>自助餐</li>
+                                    <li>快餐/外卖</li>
+                                    <li>西餐</li>
+                                    <li>烧烤</li>
+                                    <li>茶馆</li>
+                                    <li>咖啡</li>
+                                    <li>海鲜</li>
+                                    <li>清真</li>
+                                    <li>其他</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="scrindex">保洁清洗</h3>
+                                <ul>
+                                    <li>家庭保洁</li>
+                                    <li>空气净化</li>
+                                    <li>日常保洁</li>
+                                    <li>油烟机清洗</li>
+                                    <li>杀虫灭四害除蚁</li>
+                                    <li>地毯清洗</li>
+                                    <li>外墙清洗</li>
+                                    <li>玻璃清洁</li>
+                                    <li>沙发清洗</li>
+                                    <li>空调清洗</li>
+                                    <li>中央空调清洗</li>
+                                    <li>地板打蜡</li>
+                                    <li>高压清洗</li>
+                                    <li>水晶灯清洗</li>
+                                    <li>地暖清洗</li>
+                                    <li>家居清洗</li>
+                                    <li>瓷砖美缝</li>
+                                    <li>石材翻新</li>
+                                    <li>灯具清洗</li>
+                                    <li>玻璃清洗</li>
+                                    <li>冰箱清洗</li>
+                                    <li>饮水机清洗</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="run">
+                    <div class="lis">
+                        <h2>代跑服务</h2>
+                        <ul>
+                            <li>
+                                <h3 class="scrindex">搬家</h3>
+                                <ul>
+                                    <li>居民搬家</li>
+                                    <li>起重吊装</li>
+                                    <li>企业搬家</li>
+                                    <li>设备搬迁</li>
+                                    <li>钢琴搬运</li>
+                                    <li>空调移机</li>
+                                    <li>拆装家具</li>
+                                    <li>办公室搬家</li>
+                                    <li>长途搬家</li>
+                                    <li>物品包装</li>
+                                    <li>大件物品搬运</li>
+                                    <li>劳务计时服务</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="scrindex">陪玩</h3>
+                                <ul>
+
+                                    <li>电子游戏</li>
+                                    <li>高尔夫</li>
+                                    <li>漂流游泳馆</li>
+                                    <li>舞蹈</li>
+                                    <li>拳击</li>
+                                    <li>蹦极</li>
+                                    <li>卡丁车</li>
+                                    <li>潜水</li>
+                                    <li>骑马</li>
+                                    <li>攀岩</li>
+                                    <li>跆拳道馆</li>
+                                    <li>羽毛球馆</li>
+                                    <li>体育馆</li>
+                                    <li>瑜伽馆</li>
+                                    <li>足球场</li>
+                                    <li>网球场</li>
+                                    <li>滑雪场</li>
+                                    <li>台球厅</li>
+                                    <li> 保龄球馆</li>
+                                    <li>健身中心</li>
+                                    <li>乒乓球馆</li>
+                                    <li>溜冰场</li>
+                                    <li>野外生存/拓展</li>
+                                    <li>武术馆</li>
+                                    <li>散打训练馆</li>
+                                    <li>篮球场馆</li>
+                                    <li>体操馆</li>
+                                    <li>剑道/击剑</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="scrindex">生活配送</h3>
+                                <ul>
+                                    <li>蔬菜配送</li>
+                                    <li>送水</li>
+                                    <li>鲜花配送</li>
+                                    <li>快餐配送</li>
+                                    <li>送米</li>
+                                    <li>送气</li>
+                                    <li>降温冰块</li>
+                                    <li>零食烟酒配送</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="professional">
+                    <div class="lis">
+                        <h2>专业服务</h2>
+                        <ul>
+                            <li><h3 class="scrindex">礼仪庆典</h3>
+                            <ul>
+                                <li>活动策划</li>
+                                <li>礼仪模特</li>
+                                <li>舞龙舞狮庆典</li>
+                                <li>公司乐队演出</li>
+                                <li>展览</li>
+                                <li>展会</li>
+                                <li>场地布景</li>
+                            </ul>
+                            </li>
+                            <li><h3 class="scrindex">美发美体</h3>
+                            <ul>
+                                <li>美甲</li>
+                                <li>脱毛</li>
+                                <li>美发</li>
+                                <li>皮肤护理</li>
+                                <li>眼部护理</li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                            </li>
+                            <li><h3 class="scrindex">公共服务/专业机</h3>
+                            <ul>
+                                <li>工商局</li>
+                                <li>火车站</li>
+                                <li>加油站</li>
+                                <li>公证处</li>
+                                <li>书店</li>
+                                <li>派出所</li>
+                                <li>养老院</li>
+                                <li>税务局</li>
+                                <li>法院</li>
+                                <li>福利院</li>
+                                <li>汽车站</li>
+                                <li>社保</li>
+                                <li>中心商场</li>
+                                <li>大使馆</li>
+                                <li>超市</li>
+                                <li>便利店</li>
+                                <li>自来水/电力营业厅</li>
+                                <li>家电/电子卖场</li>
+                                <li>体验馆</li>
+                                <li>邮局</li>
+                                <li>通讯营业厅</li>
+                                <li>交通队</li>
+                                <li>交管局</li>
+                                <li>律师事务所</li>
+                            </ul>
+                            </li>
+                            <li><h3 class="scrindex">专业技能</h3>
+                            <ul>
+                                <li>人力 | 行政 | 管理</li>
+                                <li>销售 | 客服 | 采购</li>
+                                <li>市场 | 媒介 | 广告 </li>
+                                <li> 物流 | 质控 | 汽车</li>
+                                <li>网络 | 通信 | 电子</li>
+                                <li>财会 | 金融 | 保险</li>
+                                <li>建筑 | 装修 | 物业</li>
+                               <li>生产 |淘宝| 设计</li>
+                            </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="other">
+                    <div class="lis">
+                        <h2>生活服务</h2>
+                        <ul>
+                            <li>
+                                <h3 class="scrindex">二手回收</h3>
+                                <ul>
+                                    
+                                    <li>手机回收</li>
+                                    <li>电脑回收</li>
+                                    <li>礼品回收</li>
+                                    <li>办公用品回收</li>
+                                    <li>电器回收</li>
+                                    <li>资源回收</li>
+                                    <li>家具家居回收</li>
+                                    <li>数码电子回收</li>
+                                    <li>奢侈品回收</li>
+                                    <li>汽车回收</li>
+                                    <li>钻石回收</li>
+                                    <li>旧书回收</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="scrindex">摄影摄像</h3>
+                                <ul>
+                                    <li>个人写真</li>
+                                    <li>婚纱摄影</li>
+                                    <li>儿童摄影</li>
+                                    <li>艺术摄影</li>
+                                    <li>商业摄影</li>
+                                    <li>摄像录像</li>
+                                    <li>相框相册</li>
+                                    <li>制作彩扩冲印</li>
+                                    <li>美食摄影</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="scrindex">心理咨询</h3>
+                                <ul>  
+                                    <li>产后抑郁症</li>
+                                    <li>强迫症</li>
+                                    <li>焦虑症</li>
+                                    <li>躁狂抑郁症</li>
+                                    <li>重度抑郁症</li>
+                                    <li>抑郁性神经症</li>
+                                    <li>抑郁倾向 </li>
+                                    <li>失眠症</li>
+                                    <li>青春型精神分裂症</li>
+                                    <li>儿童精神分裂症</li>
+                                    <li>双相情感障碍</li>
+                                    <li>重度抑郁症</li>
+                                    <li>躯体形式障碍</li>
+                                    <li>癔症</li>
+                                    <li>心理障碍</li>
+                                    <li>人格分裂</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3 class="scrindex">法律咨询</h3>
+                                <ul>
+                                    <li>债务债权纠纷</li>
+                                    <li>婚姻家庭纠纷</li>
+                                    <li>法律顾问</li>
+                                    <li>知产维权</li>
+                                    <li>知产维权</li>
+                                    <li>工程纠纷</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <ul class="foot_nav">
+            <li>
+                <a href="about.html" class="tit">关于我们</a>
+                <a href="about.html">公司简介</a>
+                <a href="about.html">企业文化</a>
+                <a href="about.html">荣誉资质</a>
+
+            </li>
+            <li>
+                <a href="pro.html" class="tit">产品鉴赏</a>
+                <a href="pro.html">婚纱展示</a>
+                <a href="pro.html">西装展示</a>
+                <a href="pro.html">礼服展示</a>
+                <a href="pro.html">配件展示</a>
+            </li>
+
+            <li>
+                <a href="service.html" class="tit">企业服务</a>
+
+                <a href="service.html">批发销售</a>
+
+                <a href="service.html">团队风采</a>
+                <a href="case.html">服务报价</a>
+                <a href="service.html">专业定制</a>
+
+            </li>
+            <li>
+                <a href="news.html" class="tit">新闻资讯</a>
+                <a href="news.html">公司新闻</a>
+                <a href="news.html">行业动态</a>
+            </li>
+            <li>
+                <a href="contact.html" class="tit">联系我们</a>
+                <a href="contact.html">联系方式</a>
+                <a href="feedback.html">在线留言</a>
+            </li>
+        </ul>
+        <div class="dian">
+            <div class="ercode">
+            <img src="./images/1622109039.svg" alt="">
+            <p>微信公众号</p>
+            </div>
+            <p><span class="glyphicon glyphicon-user"></span>联系人：谢先生</p>
+            <p><span class="glyphicon glyphicon-phone-alt"></span>热线：5684-256-685</p>
+            <p><span class="glyphicon glyphicon-envelope"></span>邮箱：fhkshfkhks@qq.com</p>
+            <p><span class="glyphicon glyphicon-home"></span>地址：云南省昆明市团结路325号</p>
+        </div>
+        
+        <div class="foot-bottom">
+            &copy;版权所有：云南服务有限公司
+        </div>
+    </footer>
+    
+    <div class="callback">
+        <img src="./images/向上.svg" alt="">
+    </div>
+</body>
+
+</html>

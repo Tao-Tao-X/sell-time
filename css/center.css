@@ -1,0 +1,275 @@
+.main {
+  display: flex;
+  padding: 0 0.5rem;
+}
+
+.main .left {
+  padding-bottom: 0.7rem;
+  font-size: 0.15rem;
+  width: 25%;
+  background: linear-gradient(225deg, #ccfbff, #ef96c5 20%, #ccfbff 66%);
+}
+
+.main .left .tx {
+  text-align: center;
+  padding: 0.3rem;
+}
+
+.main .left .tx img {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+}
+
+.main .left .tx h3 {
+  color: cyan;
+  font-size: 0.2rem;
+  text-align: center;
+}
+
+.main .left ul .acti {
+  background: rgba(255, 255, 255, 0.432);
+}
+
+.main .left ul li {
+  width: 100%;
+  line-height: 0.5rem;
+  list-style-type: none;
+  border-bottom: 1px solid #666;
+  text-align: center;
+}
+
+.main .left ul li:hover {
+  background: rgba(255, 255, 255, 0.432);
+}
+
+.main .right {
+  font-size: 0.13rem;
+  padding: 0.3rem;
+  width: 75%;
+}
+
+.main .right .zhanghu ul {
+  width: 50%;
+}
+
+.main .right .zhanghu ul li {
+  line-height: 0.3rem;
+  list-style-type: none;
+}
+
+.main .right .zhanghu ul li:nth-child(3) span {
+  margin-left: 0.2rem;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 0.1rem;
+  display: inline-block;
+  width: 0.5rem;
+  line-height: 0.2rem;
+  background: lightblue;
+}
+
+.main .right .zhanghu ul li:last-child span {
+  display: inline-block;
+  width: 0.5rem;
+  line-height: 0.2rem;
+  border-radius: 10px;
+  background: pink;
+  margin-left: 0.1rem;
+  text-align: center;
+}
+
+.main .right .zhanghu .xiangce {
+  width: 100%;
+}
+
+.main .right .zhanghu .tuce {
+  width: 100%;
+  display: flex;
+  overflow-x: scroll;
+}
+
+.main .right .zhanghu .tuce img {
+  height: 1.5rem;
+}
+
+.main .right .shezhi {
+  display: none;
+  width: 100%;
+}
+
+.main .right .shezhi .action {
+  background: #ff8282 !important;
+  color: white !important;
+}
+
+.main .right .shezhi li {
+  width: 100%;
+  padding: 0.3rem 0;
+  list-style-type: none;
+  border-bottom: 1px solid #666;
+  font-size: 0.15rem;
+  position: relative;
+}
+
+.main .right .shezhi li a {
+  position: absolute;
+  left: 0;
+  color: #333;
+  text-decoration: none;
+}
+
+.main .right .shezhi li a:hover {
+  color: orange;
+}
+
+.main .right .shezhi li .open {
+  position: absolute;
+  right: 0;
+  width: 0.5rem;
+  height: 0.25rem;
+  background: #999;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+.main .right .shezhi .l-she {
+  width: 45%;
+  padding: 0 0.1rem;
+  float: left;
+}
+
+.main .right .shezhi .r-she {
+  width: 45%;
+  padding: 0 0.1rem;
+  float: left;
+  margin-left: 5%;
+  margin-bottom: 0.3rem;
+}
+
+.main .right .shezhi button {
+  display: block;
+  width: 60%;
+  height: 0.35rem;
+  margin: auto;
+  border-radius: 30px;
+  border: none;
+  background: rgba(153, 153, 153, 0.61);
+}
+
+.main .right .shezhi button:hover {
+  background: orange;
+}
+
+.main .right .jifen {
+  display: none;
+}
+
+.main .right .jifen .j-top {
+  font-size: 0.13rem;
+  padding: 0.2rem 0;
+}
+
+.main .right .jifen .j-top a {
+  margin-right: 0.2rem;
+  color: #999;
+  text-decoration: none;
+}
+
+.main .right .jifen .j-top a:hover {
+  color: orange;
+}
+
+.main .right .jifen ol {
+  margin-top: 0.2rem;
+}
+
+.main .right .jifen ol li {
+  line-height: 0.4rem;
+  width: 100%;
+  padding: 0 0.15rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid paleturquoise;
+  list-style-type: none;
+}
+
+.main .right .jifen ol li:hover {
+  background: paleturquoise;
+}
+
+.main .right .chongzhi {
+  display: none;
+  width: 100%;
+  font-size: 0.13rem;
+}
+
+.main .right .chongzhi h3 {
+  font-size: 0.2rem;
+}
+
+.main .right .chongzhi .jine {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.main .right .chongzhi .jine h3 {
+  width: 100%;
+}
+
+.main .right .chongzhi .jine span {
+  font-size: 0.13rem;
+  text-align: center;
+  margin-top: 0.2rem;
+  display: inline-block;
+  padding: 0.1rem 0;
+  border-radius: 10px;
+  width: 30%;
+  background: #ccfbff;
+  vertical-align: middle;
+}
+
+.main .right .chongzhi .jine span:hover {
+  background: brown;
+  color: white;
+}
+
+.main .right .kf {
+  display: none;
+}
+
+.main .right .kf .k-top a {
+  margin-right: 0.2rem;
+  color: #999;
+  text-decoration: none;
+}
+
+.main .right .kf .k-top a:hover {
+  color: orange;
+}
+
+.main .right .kf input {
+  width: 60%;
+  height: 0.35rem;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  background: rgba(102, 102, 102, 0.493) url(../images/search.png) no-repeat left center;
+  background-size: 0.35rem;
+  padding-left: 0.35rem;
+  margin: 0.3rem 0;
+}
+
+.main .right .kf ul li {
+  line-height: 0.35rem;
+  padding-left: 0.2rem;
+  border-bottom: 1px solid #666;
+  list-style-type: none;
+}
+
+.main .right .kf ul li:hover {
+  color: aquamarine;
+}
